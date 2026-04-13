@@ -1,0 +1,6 @@
+@TB5.NLayer.MinimalAPI_HostAddress = http://localhost:5031
+
+GET {{TB5.NLayer.MinimalAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

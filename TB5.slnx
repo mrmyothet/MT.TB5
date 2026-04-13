@@ -1,0 +1,15 @@
+<Solution>
+  <Project Path="TB5.ConsoleApp.AdoDotNetSample/TB5.ConsoleApp.AdoDotNetSample.csproj" />
+  <Project Path="TB5.ConsoleApp.DapperSample/TB5.ConsoleApp.DapperSample.csproj" />
+  <Project Path="TB5.ConsoleApp.Database/TB5.ConsoleApp.Database.csproj" />
+  <Project Path="TB5.ConsoleApp.EFCoreSample/TB5.ConsoleApp.EFCoreSample.csproj" />
+  <Project Path="TB5.Layer.Domain/TB5.Layer.Domain.csproj" />
+  <Project Path="TB5.NLayer.AdoDotNet/TB5.NLayer.AdoDotNet.csproj" />
+  <Project Path="TB5.NLayer.ConsoleApp/TB5.NLayer.ConsoleApp.csproj" />
+  <Project Path="TB5.NLayer.Dapper/TB5.NLayer.Dapper.csproj" />
+  <Project Path="TB5.NLayer.Database/TB5.NLayer.Database.csproj" />
+  <Project Path="TB5.NLayer.MinimalAPI/TB5.NLayer.MinimalAPI.csproj" />
+  <Project Path="TB5.NLayer.WebAPI/TB5.NLayer.WebAPI.csproj" />
+  <Project Path="TB5.WebAPI.Database/TB5.WebAPI.Database.csproj" />
+  <Project Path="TB5.WebAPI/TB5.WebAPI.csproj" />
+</Solution>
