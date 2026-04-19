@@ -3,6 +3,7 @@
   <Project Path="TB5.ConsoleApp.DapperSample/TB5.ConsoleApp.DapperSample.csproj" />
   <Project Path="TB5.ConsoleApp.Database/TB5.ConsoleApp.Database.csproj" />
   <Project Path="TB5.ConsoleApp.EFCoreSample/TB5.ConsoleApp.EFCoreSample.csproj" />
+  <Project Path="TB5.HttpClientSample/TB5.HttpClientSample.csproj" Id="867519d8-9d8f-42b4-97ec-6e54be985a6d" />
   <Project Path="TB5.Layer.Domain/TB5.Layer.Domain.csproj" />
   <Project Path="TB5.NLayer.AdoDotNet/TB5.NLayer.AdoDotNet.csproj" />
   <Project Path="TB5.NLayer.ConsoleApp/TB5.NLayer.ConsoleApp.csproj" />
