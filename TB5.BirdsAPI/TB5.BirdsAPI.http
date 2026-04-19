@@ -1,0 +1,6 @@
+@TB5.BirdsAPI_HostAddress = http://localhost:5265
+
+GET {{TB5.BirdsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

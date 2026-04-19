@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="TB5.BirdsAPI/TB5.BirdsAPI.csproj" Id="a9f500e2-39d0-4e63-84ab-4090cd0ab03b" />
   <Project Path="TB5.ConsoleApp.AdoDotNetSample/TB5.ConsoleApp.AdoDotNetSample.csproj" />
   <Project Path="TB5.ConsoleApp.DapperSample/TB5.ConsoleApp.DapperSample.csproj" />
   <Project Path="TB5.ConsoleApp.Database/TB5.ConsoleApp.Database.csproj" />
