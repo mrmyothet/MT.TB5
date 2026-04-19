@@ -4,12 +4,14 @@ using System.Text;
 using static System.Net.Mime.MediaTypeNames;
 
 Console.OutputEncoding = Encoding.UTF8;
-//Console.WriteLine("こんにちは世界"); // Example UTF-8 text
+Console.WriteLine("こんにちは世界");
 
 string baseAddress = "https://fake-brids-apis.vercel.app/";
 string birdsEndpoint = baseAddress + "/api/v1/birds";
 
-//await GetMethod(birdsEndpoint);
+HttpClientApiService apiService = new HttpClientApiService();
+
+await apiService.GetMethod(birdsEndpoint);
 
 BirdRequestModel newBird = new BirdRequestModel {
     BirdEnglishName = "Test Bird",
@@ -18,15 +20,13 @@ BirdRequestModel newBird = new BirdRequestModel {
     ImagePath = "https://example.com/test-bird.jpg"
 };
 
-//await PostMethod(birdsEndpoint, newBird);
+await apiService.PostMethod(birdsEndpoint, newBird);
+await apiService.PutMethod($"{birdsEndpoint}/1", newBird);
+await apiService.PatchMethod($"{birdsEndpoint}/1", newBird);
+await apiService.DeleteMethod($"{birdsEndpoint}/1");
+await apiService.GetByIdMethod($"{birdsEndpoint}/1");
 
-await PutMethod($"{birdsEndpoint}/1", newBird);
-
-//await PatchMethod($"{birdsEndpoint}/1", newBird);
-
-//await DeleteMethod($"{birdsEndpoint}/1");
-
-//await GetByIdMethod($"{birdsEndpoint}/20");
+Console.ReadLine();
 
 Console.ReadLine();
 
@@ -172,25 +172,6 @@ async Task GetByIdMethod(string resourceUri)
     
     string content = await response.Content.ReadAsStringAsync();
     Console.WriteLine($"Response: {content}");
-}
-
-public class BirdModel
-{
-    public int Id { get; set; }
-    public string BirdMyanmarName { get; set; }
-    public string BirdEnglishName { get; set; }
-    public string Description { get; set; }
-    public string ImagePath { get; set; }
-}
-
-
-
-public class BirdRequestModel
-{
-    public string BirdMyanmarName { get; set; }
-    public string BirdEnglishName { get; set; }
-    public string Description { get; set; }
-    public string ImagePath { get; set; }
 }
 
 
